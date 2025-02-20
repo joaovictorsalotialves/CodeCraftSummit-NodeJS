@@ -1,0 +1,30 @@
+@url_base = http://localhost:3333
+
+POST {{url_base}}/subscriptions
+Content-Type: application/json
+
+{
+  "name": "João Victor Saloti Alves",
+  "email": "indicado3@gmail.com.br",
+  "referrer": "4bf34485-927d-4969-9ecd-46ed32b29640"
+}
+
+###
+
+GET {{url_base}}/invites/b19687e6-2194-4c73-ba29-1dad1ccd5113
+
+###
+
+GET {{url_base}}/subscribers/b19687e6-2194-4c73-ba29-1dad1ccd5113/ranking/clicks
+
+###
+
+GET {{url_base}}/subscribers/b19687e6-2194-4c73-ba29-1dad1ccd5113/ranking/count
+
+###
+
+GET {{url_base}}/subscribers/b19687e6-2194-4c73-ba29-1dad1ccd5113/ranking/position
+
+###
+
+GET {{url_base}}/ranking
